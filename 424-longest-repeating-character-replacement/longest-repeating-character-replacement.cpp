@@ -20,8 +20,8 @@ public:
                     mp.erase(s[l]);
                 l++;
             }
-            if (r - l + 1 - maxf <= k)
-                r++;
-        } return r-l+1-1;
+            if (r - l + 1 - maxf <= k) maxi=max(maxi, r-l+1);
+            r++;
+        } return maxi;
     }
 };
